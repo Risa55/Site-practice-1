@@ -22,7 +22,7 @@ body {
     width: 100%;
     max-width: 1000px;
     height: auto;
-    margin: 0 auto 650px;
+    margin: 0 auto 50px;
 }
 
 .clearfix::after {
@@ -332,7 +332,6 @@ ul .nav-item {
 ----------------*/
 .sidebar {
     width: 33.33%;
-    height: 100px;
     padding: 0;
     float: right;
 }
@@ -415,7 +414,7 @@ button[type=submit]::before {
 
 .profile .catnose {
     position: absolute;
-    top: 40%;
+    top: -40px;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -427,6 +426,7 @@ button[type=submit]::before {
 }
 
 .profile-detail {
+    position: relative;
     padding: 0 15px;
     letter-spacing: 1px;
     line-height: 29px;
@@ -465,29 +465,41 @@ button[type=submit]::before {
 .sns-item {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #58A9EF;
     line-height: 40px;
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin: 20px 2px;
 }
 
 .sns-item .icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
+    top: 8px;
+    left: 10px;
+    /* -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+.sns-item .fa-twitter {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
+
+.sns-item .fa-facebook-f {
+    position: absolute;
+    top: 8px;
+    left: 14px;
 }
 
 .sns-item a {
     color: #fff;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     line-height: 40px;
 }
@@ -660,7 +672,7 @@ button[type=submit]::before {
 }
 
 .follow .icon {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 10px;
 }
 
@@ -668,7 +680,7 @@ button[type=submit]::before {
     display: inline-block;
     width: 45px;
     height: 45px;
-    border-radius: 15%;
+    border-radius: 50%;
     background-color: #58A9EF;
     text-align: center;
     line-height: 45px;
@@ -1048,6 +1060,21 @@ s .select::before {
 /*-------------------
         media
 --------------------*/
+@media (max-width:1030px) {
+    .footer-box {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        font-size: 0
+    }
+
+    .footer-box .item {
+        display: inline-block;
+        width: 50%;
+        padding-right: 30px;
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width:767px) {
     .wrapper {
@@ -1081,4 +1108,19 @@ s .select::before {
 
     form {
         width: 400px;
+    }
+
+    .footer-box {
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 0
+    }
+
+    .footer-box .item {
+        display: block;
+        width: 33.33%;
+        padding-right: 30px;
+        vertical-align: top;
+        font-size: 1.5rem;
     }
