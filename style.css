@@ -625,7 +625,7 @@ button[type=submit]::before {
 }
 
 .popular-item img {
-    width: 25%;
+    width: 80px;
     height: auto;
     display: inline-block;
 }
@@ -862,7 +862,7 @@ s .select::before {
 
 .footer-top {
     position: relative;
-    padding: 40px 70px;
+    padding: 40px 50px;
     background-color: #DFE3EB;
 }
 
@@ -1119,8 +1119,12 @@ s .select::before {
 
     .footer-box .item {
         display: block;
-        width: 33.33%;
+        width: 100%;
         padding-right: 30px;
         vertical-align: top;
         font-size: 1.5rem;
+    }
+
+    .fooer-box .popular-item {
+        display: inlineーblock;
     }
